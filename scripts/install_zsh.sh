@@ -14,10 +14,11 @@ install_zsh()
 
   cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
-  nano .zshrc
-
   sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
-  sed -i 's/plugins=(git)/plugins=(git docker-compose docker git-auto-fetch history sudo ubuntu web-search timer)/g' ~/.zshrc
+
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+  sed -i 's/plugins=(git)/plugins=(git docker-compose docker git-auto-fetch history sudo ubuntu web-search timer zsh-autosuggestions)/g' ~/.zshrc
 
   chsh -s /bin/zsh
 
