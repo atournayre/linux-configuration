@@ -12,7 +12,7 @@ upgrade()
 
 title()
 {
-  echo "${GREEN}INSTALLATION DE $1...${NC}"
+  echo "${GREEN}INSTALLATION OF $1...${NC}"
   echo ""
 }
 
