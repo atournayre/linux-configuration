@@ -11,6 +11,17 @@ Ubuntu 20.04 must be installed.
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - ZSH
 - [Oh My Zsh](https://ohmyz.sh/)
+- Oh My Zsh plugins
+  - git
+  - docker-compose
+  - docker
+  - git-auto-fetch
+  - history
+  - sudo
+  - ubuntu
+  - web-search
+  - timer
+  - zsh-autosuggestions
 - [LSD](https://github.com/Peltoche/lsd)
 - [PHPStorm](https://www.jetbrains.com/fr-fr/phpstorm/download/#section=linux)
 
