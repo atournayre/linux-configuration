@@ -4,7 +4,7 @@ install_docker()
 {
   sudo apt-get remove docker docker-engine docker.io containerd runc
   update
-  sudo apt-get install \
+  sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -16,7 +16,7 @@ install_docker()
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
   update
-  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
   sudo docker run hello-world
 }
