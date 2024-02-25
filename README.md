@@ -1,7 +1,7 @@
-Use this repository to easy install developement software on Ubuntu 20.04.
+Use this repository to easy install developement software on Ubuntu 22.
 
 # Prerequisites
-Ubuntu 20.04 must be installed.
+Ubuntu 22 must be installed.
 
 # Programs that will be installed
 
