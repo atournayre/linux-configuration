@@ -3,6 +3,9 @@
     email = aurelien.tournayre@gmail.com
     signingkey = ~/.ssh/id_rsa.pub
 
+[gpg]
+    format = ssh
+
 [core]
     editor = nano
     autocrlf = input
