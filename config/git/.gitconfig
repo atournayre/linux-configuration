@@ -12,6 +12,9 @@
     excludesfile = ~/.gitignore_global
     whitespace = trailing-space,space-before-tab
 
+[commit]
+    gpgsign = true
+
 [alias]
     # Better branch
     bb = !sh ~/scripts/git/better-branches.sh
