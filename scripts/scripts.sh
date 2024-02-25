@@ -9,3 +9,4 @@
 . ./scripts/install_zsh.sh --source-only
 . ./scripts/install_ssh.sh --source-only
 . ./scripts/install_phpstorm.sh --source-only
+. ./scripts/install_git.sh --source-only

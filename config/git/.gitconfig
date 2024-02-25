@@ -1,0 +1,52 @@
+[user]
+    name = Aurélien Tournayre
+    email = aurelien.tournayre@gmail.com
+    signingkey = ~/.ssh/id_rsa.pub
+
+[core]
+    editor = nano
+    autocrlf = input
+    excludesfile = ~/.gitignore_global
+    whitespace = trailing-space,space-before-tab
+
+[alias]
+    # Better branch
+    bb = !sh ~/scripts/git/better-branches.sh
+    # Commit search
+    se = !git rev-list --all | xargs git grep -F
+    # Last commit
+    last = log -1 HEAD --stat
+    # Log
+    ll = log --oneline
+    # Git status mode compact
+    st = status -sb
+    # Global config
+    gl = config --global -l
+    # Word diff
+    wd = diff --color-words --word-diff
+
+[branch]
+    sort = -committerdate
+
+[rerere]
+    enabled = true
+
+[color]
+    ui = auto
+
+[credential]
+    helper = cache --timeout=3600
+
+[diff]
+    renames = true
+
+[merge]
+    renames = true
+
+# Multiple gitconfig
+; [includeIf "gitdir:~/PhpstormProjects/perso/"]
+;   path = ~/PhpstormProjects/perso/.gitconfig
+
+; [includeIf "gitdir:~/PhpstormProjects/work/"]
+;   path = ~/PhpstormProjects/work/.gitconfig
+
